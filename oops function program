@@ -1,0 +1,67 @@
+class common
+{
+  static String pm="Modi";
+} 
+class tn
+{
+  static String cm="joseph vijay";
+  String state="Tamil Nadu";
+  String district;
+  int population;
+  public void set_dim(String a,int b)
+  {
+    district=a;
+    population=b;
+  }
+  public void display()
+  {
+    System.out.println("1.pm:"+common.pm);
+    System.out.println("2.cm:"+ cm);
+    System.out.println("3.State:"+ state);
+    System.out.println("4.District:"+district);
+    System.out.println("5.population:"+population);
+    System.out.println("________");
+  }
+}
+class an
+{
+  static String cm="MK Stalin";
+  String state="Andra";
+  String district;
+  int population;
+  public void set_dim(String a1,int b1)
+  {
+    district=a1;
+    population=b1;
+  }
+  public void display()
+  {
+    System.out.println("1.pm:"+common.pm);
+    System.out.println("2.cm:"+ cm);
+    System.out.println("3.State:"+ state);
+    System.out.println("4.District:"+district);
+    System.out.println("5.population:"+population);
+    System.out.println("________");
+  }
+}
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+      tn a=new tn();
+      tn b=new tn();
+      an a1=new an();
+      an b1=new an();
+
+      a.set_dim("chennai",100000);
+      b.set_dim("coimbatur",200000);
+      a.display();
+      b.display();
+      
+      a1.set_dim("tada",100000);
+      b1.set_dim("andra mess",123456);
+      a1.display();
+      b1.display();
+    }
+}
