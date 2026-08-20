@@ -1,0 +1,37 @@
+class Rect {
+    int a, c;
+
+    Rect(int l, int b) {
+        a = l;
+        c = b;
+    }
+
+    public void display() {
+        System.out.println("Area is " + (a * c));
+    }
+}
+
+public class main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n, l, b;
+
+        System.out.println("Number of rectangles ");
+        n = sc.nextInt();
+        Rect[] r = new Rect[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter length of rectangle " + (i + 1));
+            l = sc.nextInt();
+            System.out.println("Enter breath of rectangle " + (i + 1));
+            b = sc.nextInt();
+            r[i] = new Rect(l, b);
+        }
+
+        System.out.println("Area of all rectangle :");
+        for (int i = 0; i < n; i++) {
+            System.out.println("Area of rectangle " + (i + 1));
+            r[i].display();
+        }
+    }
+}
