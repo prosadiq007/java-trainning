@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        int d,m;
+        boolean f;
+       for(int i=100;i<1000;i++){
+           f=true
+           m=i;
+           while(i!=0)
+           {
+               d=i%10;
+               if(i!=7 && i!=5&& i!=3 && i!=2 && i==0 && i==1)
+               {
+                   f=false;
+                   break;
+               }
+               m=m/10
+           }
+       }
+    }
+}
